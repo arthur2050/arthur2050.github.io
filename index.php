@@ -1,3 +1,3 @@
 <?php
-echo "Пыха в работе";
+echo "php is work";
 ?>
