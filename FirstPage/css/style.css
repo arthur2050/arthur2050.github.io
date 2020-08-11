@@ -1,0 +1,367 @@
+*{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: "SegoeWP Light"; /* Имя шрифта */
+    src: url(../fonts/Segoe WP Light.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+
+	font-family: "Segoe WP Light","sans-serif";
+}
+.menu *,.menu{
+	/*border:1px solid red;*/
+}
+.menu{
+	padding:20px 25px;
+}
+.menu-logo,.menu-logo-img,.menu-logo-text,.nav-list-item{
+	display: inline-block;
+}
+.nav{
+	display: inline-block;
+}
+.menu-logo,.menu-logo-img,.menu-logo-text{
+	vertical-align: middle;
+}
+.container{
+	max-width: 1024px;
+}
+.nav{
+	vertical-align: bottom;
+	margin-left: 400px;
+}
+.nav-list-item{
+	margin-right: 35px;
+	color:#6c6c6c;
+}
+.nav-list :last-child{
+	margin-right: 0px;
+}
+
+.menu-logo-text{
+	display: inline-block;
+	font-size: 35pt;
+	margin-left: 15px;
+
+}
+.slider *{
+	/*border: 1px solid red;*/
+}
+
+.slider{
+	margin:0 auto;
+	background-image: url(../img/background.jpg);
+	max-width: 1245px;
+	min-height: 485px;
+	vertical-align: bottom;
+}
+.slider-arrow-left,.slider-img,.slider-description ,.slider-arrow-right{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 98px;
+}
+.slider-img{
+	margin-top: 22px;
+}
+.slider-arrow-left{
+	margin-left: 0px;
+}
+.slider-description,.slider-description-btn{
+	color:white;
+}
+
+.slider-description-btn{
+	background-color: #5094f2;
+}
+.slider-description-block-text-h,.slider-description-btn{
+	display: block;
+}
+.slider-description{
+	font-size: 22px;
+}
+.slider-description-block-text-h{
+	font-size: 30px;
+
+}
+.slider-description-bock-main-desc{
+	display: block;
+}
+.slider-description-block *{
+	margin-bottom: 25px;
+}	
+.slider-description-btn {
+	font-size: 19px;
+	border:none;
+	margin-left: 5px;
+	padding: 10px;
+}
+.slider-description-btn-item{
+	display: inline-block;
+	vertical-align: middle;
+}
+.cards{
+	margin-top: 70px;
+}
+.cards *{
+	/*border: 1px solid red;*/
+}
+.cards-item{
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.cards-item-2{
+	margin-left: 160px;
+	margin-right: 150px;
+}
+.cards-item-1{
+	margin-left: 28px;
+}
+.cards-item-h{
+	margin-top: 20px;
+	color: #a2c6f8;
+	font-size: 16px;
+}
+.cards-item-t{
+	color: #b5b5b5;
+	font-size: 8px;
+}
+.cards-item:last-child{
+	margin-bottom: 0px;
+}
+.cards-item-img{
+	border-radius: 100px;
+}
+.product *{
+	/*border: 1px solid red;*/
+}
+.product{
+/*	border: 1px solid red;
+	margin-top: 90px;*/
+	margin-left: 40px;
+	margin-top: 90px;
+}
+.product-h-text{
+	display: block;
+	margin-left: 15px;
+}
+.product-h,.product-description,.product-description-description,.product-footer-t{
+	color: #b5b5b5;
+	display: inline-block;
+}
+.product-h-text,.product-description-introduction{
+	font-size: 32px;
+	margin-bottom: 28px;
+}
+.product-description-description{
+	font-size: 12px;
+	line-height: 26px;
+}
+.product-description{
+	margin-left: 85px;
+}
+.container{
+	margin: 0 auto;
+	padding-left: 40px;
+}
+.product-footer{
+	padding-top:80px;
+	padding-bottom: 45px;
+	text-align: center;
+}
+.slider-arrow-left,.slider-arrow-right{
+	cursor: pointer;
+}
+
+/*css for slider*/
+
+#slides{
+	position: relative;
+	display: inline-block;
+	width: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+
+.slide{
+	position: absolute;
+    left: 0px;
+    top: -150px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+	
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+	display: inline-block;
+	width: 345px;
+	height: 436px;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    box-sizing: border-box;
+    /*background: #333;*/
+    color: #fff;
+  	background-size: cover;
+}
+
+/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
+.slide:nth-of-type(1){
+  background-image: url('../img/Iphone.png');
+}
+
+/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+.slide:nth-of-type(2){
+  background-image: url('../img/Phone1.png');
+}
+
+/* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
+.slide:nth-of-type(3){
+  background-image: url('../img/Phone2.png');
+}
+.slide:nth-of-type(4){
+  background-image: url('../img/Phone3.png');
+}
+
+
+.controls:hover,
+.controls:focus{
+  background: black;
+  opacity: 0.5;
+  color: #333;
+}
+
+.slider-description,.slider-arrow-left,.slider-arrow-right{
+	margin-top: 160px;
+}
+
+/*адаптация*/
+
+@media only screen and (max-width:960px){
+	.menu{
+		text-align: center;
+	}
+	.cards-item-2{
+		margin-left: 80px; 
+		margin-right: 60px;
+	}
+	.menu-logo{
+		display: block;
+		/*background-color: red;*/
+	}
+	.nav{
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width:880px){
+
+	.slider-arrow-right{
+		margin-left: 40px;
+	}
+	.cards-item{
+		vertical-align: middle;
+	}
+		.product{
+		margin-left: 0px;
+	}
+	.container{
+		padding-left: 0;
+	}
+	.product-description{
+		margin-left: 0px;
+	}
+@media only screen and (max-width:825px){
+	.controls{
+		display: none;
+	}
+
+}
+@media only screen and (max-width:745px){
+	.product-h-image{
+		width:100%;
+	}
+	.product{
+		margin-left: 0px;
+	}
+	.container{
+		padding-left: 0;
+	}
+	.cards-item{
+		display: block;
+	}
+	
+}
+@media only screen and (max-width:725px){
+	.product{
+		margin-left: 0px;
+		text-align: center;
+	}
+	.container{
+		padding-left: 0;
+	}
+	.cards-item{
+		display: block;
+	}
+	
+}
+@media only screen and (max-width:680px){
+	
+	.slider-description{
+		margin-left: 50px;
+	}
+}
+@media only screen and (max-width:633px){
+	
+	.slide{
+		top:0;
+	}
+	.add-slider{
+		text-align: center;
+	}
+		.slider-description{
+		margin-top: 450px;
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width:390px){
+	
+	.slide{
+		left:-25px;
+	}
+
+}
+@media only screen and (max-width:377px){
+	
+	.slide{
+		left:-25px;
+	}
+	.nav{
+		margin:0;
+	}
+	.nav-list-item{
+		display: inline-block;
+	}
+
+}
